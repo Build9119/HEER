@@ -1,0 +1,26 @@
+import type * as ElevenLabs from "../index";
+export interface ProjectImageResponseModel {
+    imageId: string;
+    filename: string;
+    signedUrl?: string;
+    thumbnailSignedUrl?: string;
+    source?: "upload";
+    fileSizeBytes: number;
+    width: number;
+    height: number;
+    trackId?: string;
+    offsetMs: number;
+    durationMs: number;
+    order: string;
+    canvasPlacement: ElevenLabs.CanvasPlacement;
+    animation?: ElevenLabs.ClipAnimation;
+    opacity?: number;
+    createdAtMs: number;
+    updatedAtMs: number;
+    currentSnapshotId?: string;
+    sourceAssetId?: string;
+    sourcePlatformAssetId?: string;
+    error?: string;
+    pendingTask?: ElevenLabs.PendingClipTask;
+    analysis?: ElevenLabs.ImageAnalysis;
+}

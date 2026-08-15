@@ -1,0 +1,9 @@
+import type * as ElevenLabs from "../index";
+export interface SubmitOrderResponse {
+    /** The ID of the submitted order. */
+    orderId: ElevenLabs.OrderId;
+    /** The current state of the order after submission. */
+    state: ElevenLabs.OrderState;
+    /** The timestamp when the order was submitted. */
+    submittedAt: Date;
+}

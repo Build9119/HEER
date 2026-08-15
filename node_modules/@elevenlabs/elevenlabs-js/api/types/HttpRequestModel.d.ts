@@ -1,0 +1,16 @@
+import type * as ElevenLabs from "../index";
+/**
+ * HTTP request details.
+ *
+ * Spec: https://schema.ocsf.io/1.6.0/objects/http_request
+ */
+export interface HttpRequestModel {
+    /** HTTP method (GET, POST, etc.) */
+    httpMethod: string;
+    /** Request URL object */
+    url: ElevenLabs.UrlModel;
+    /** User agent string */
+    userAgent?: string;
+    /** X-Forwarded-For header as a list */
+    xForwardedFor?: string[];
+}

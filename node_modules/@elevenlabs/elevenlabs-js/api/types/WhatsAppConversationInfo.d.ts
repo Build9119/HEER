@@ -1,0 +1,7 @@
+import type * as ElevenLabs from "../index";
+export interface WhatsAppConversationInfo {
+    direction?: ElevenLabs.WhatsAppConversationInfoDirection;
+    whatsappPhoneNumberId?: string;
+    whatsappUserId: string;
+    awaitingFirstUserMessage?: boolean;
+}

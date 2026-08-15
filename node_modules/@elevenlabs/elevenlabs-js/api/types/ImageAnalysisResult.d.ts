@@ -1,0 +1,11 @@
+import type * as ElevenLabs from "../index";
+export interface ImageAnalysisResult {
+    title: string;
+    description: string;
+    contentType?: string;
+    moodAndStyle?: string;
+    compositionNotes?: string;
+    /** Readable text overlaid or shown in the image, if any. */
+    visibleText?: string;
+    subjects?: ElevenLabs.ImageSubject[];
+}

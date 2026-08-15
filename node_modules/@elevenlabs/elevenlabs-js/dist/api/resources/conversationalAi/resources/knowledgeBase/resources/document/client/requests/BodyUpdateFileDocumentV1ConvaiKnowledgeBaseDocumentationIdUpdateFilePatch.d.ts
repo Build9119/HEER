@@ -1,0 +1,11 @@
+import type * as core from "../../../../../../../../../core";
+/**
+ * @example
+ *     {
+ *         file: fs.createReadStream("/path/to/your/file")
+ *     }
+ */
+export interface BodyUpdateFileDocumentV1ConvaiKnowledgeBaseDocumentationIdUpdateFilePatch {
+    /** Documentation that the agent will have access to in order to interact with users. */
+    file: core.file.Uploadable;
+}

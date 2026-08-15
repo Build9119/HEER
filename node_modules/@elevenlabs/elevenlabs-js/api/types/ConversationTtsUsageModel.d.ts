@@ -1,0 +1,10 @@
+import type * as ElevenLabs from "../index";
+/**
+ * Aggregated TTS usage for a conversation (analytics-only, not billing).
+ */
+export interface ConversationTtsUsageModel {
+    primaryTtsModel?: string;
+    totalAudioOutputSeconds?: number;
+    totalCharacters?: number;
+    perVoiceUsage?: ElevenLabs.ConversationVoiceUsageModel[];
+}

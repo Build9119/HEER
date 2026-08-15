@@ -1,0 +1,16 @@
+/**
+ * @example
+ *     {
+ *         name: "name"
+ *     }
+ */
+export interface BodyCreateFolderV1ConvaiKnowledgeBaseFolderPost {
+    /** A custom, human-readable name for the document. */
+    name: string;
+    /** If set, the created document or folder will be placed inside the given folder. */
+    parentFolderId?: string;
+    /** Whether to enable auto-sync for this URL document. */
+    enableAutoSync?: boolean;
+    /** Whether to automatically remove the document if the URL becomes unavailable. Only applicable when auto-sync is enabled. */
+    autoRemove?: boolean;
+}

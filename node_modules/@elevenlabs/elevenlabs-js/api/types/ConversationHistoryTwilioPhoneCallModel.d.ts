@@ -1,0 +1,9 @@
+import type * as ElevenLabs from "../index";
+export interface ConversationHistoryTwilioPhoneCallModel {
+    direction: ElevenLabs.TelephonyDirection;
+    phoneNumberId: string;
+    agentNumber: string;
+    externalNumber: string;
+    streamSid: string;
+    callSid: string;
+}

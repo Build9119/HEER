@@ -1,0 +1,27 @@
+export declare const ClientEvent: {
+    readonly ConversationInitiationMetadata: "conversation_initiation_metadata";
+    readonly AsrInitiationMetadata: "asr_initiation_metadata";
+    readonly Ping: "ping";
+    readonly Audio: "audio";
+    readonly Interruption: "interruption";
+    readonly UserTranscript: "user_transcript";
+    readonly TentativeUserTranscript: "tentative_user_transcript";
+    readonly AgentResponse: "agent_response";
+    readonly AgentResponseCorrection: "agent_response_correction";
+    readonly ClientToolCall: "client_tool_call";
+    readonly McpToolCall: "mcp_tool_call";
+    readonly McpConnectionStatus: "mcp_connection_status";
+    readonly AgentToolRequest: "agent_tool_request";
+    readonly AgentToolResponse: "agent_tool_response";
+    readonly AgentToolResponseFullPayload: "agent_tool_response_full_payload";
+    readonly AgentResponseMetadata: "agent_response_metadata";
+    readonly VadScore: "vad_score";
+    readonly AgentChatResponsePart: "agent_chat_response_part";
+    readonly ClientError: "client_error";
+    readonly GuardrailTriggered: "guardrail_triggered";
+    readonly DtmfRequest: "dtmf_request";
+    readonly AgentResponseComplete: "agent_response_complete";
+    readonly InternalTurnProbability: "internal_turn_probability";
+    readonly InternalTentativeAgentResponse: "internal_tentative_agent_response";
+};
+export type ClientEvent = (typeof ClientEvent)[keyof typeof ClientEvent];

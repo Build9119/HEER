@@ -1,0 +1,20 @@
+/**
+ * Configuration options for the Conversation.
+ */
+export interface ConversationInitiationData {
+    /** Extra body parameters to include in the conversation initiation request */
+    extraBody?: Record<string, any>;
+    /** Configuration overrides for the conversation */
+    conversationConfigOverride?: Record<string, any>;
+    /** Dynamic variables to use in the conversation */
+    dynamicVariables?: Record<string, any>;
+    /** The environment to use for the conversation */
+    environment?: string;
+}
+/**
+ * Creates a default conversation initiation data object.
+ *
+ * @param options Optional partial configuration to override defaults
+ * @returns Complete conversation initiation data object
+ */
+export declare function createConversationInitiationData(options?: Partial<ConversationInitiationData>): ConversationInitiationData;

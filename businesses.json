@@ -1,0 +1,37 @@
+{
+  "businesses": [
+    {
+      "id": "ai_agency",
+      "name": "AI Agency",
+      "type": "AI Services",
+      "data_root": "data/demo",
+      "icon": "◈",
+      "color": "#4d9fff",
+      "tagline": "Intelligence That Executes",
+      "enabled": true,
+      "default": true
+    },
+    {
+      "id": "sip_and_slice",
+      "name": "Sip & Slice",
+      "type": "Restaurant",
+      "data_root": "data/demo_businesses/sip_and_slice",
+      "icon": "🍕",
+      "color": "#ff6b4a",
+      "tagline": "Wood-fired pizza & craft cocktails",
+      "enabled": true,
+      "default": false
+    },
+    {
+      "id": "aaa_ca_firm",
+      "name": "AAA- CA FIRM",
+      "type": "It is a global finance controller system.",
+      "data_root": "data/demo_businesses/aaa_ca_firm",
+      "icon": "🏢",
+      "color": "#4d9fff",
+      "tagline": "",
+      "enabled": true,
+      "default": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+/**
+ * Device information.
+ *
+ * Spec: https://schema.ocsf.io/1.6.0/objects/device
+ */
+export interface DeviceModel {
+    /** IP address */
+    ip?: string;
+    /** Device hostname */
+    hostname?: string;
+    /** Device type ID (99 = Unknown) */
+    typeId?: number;
+}

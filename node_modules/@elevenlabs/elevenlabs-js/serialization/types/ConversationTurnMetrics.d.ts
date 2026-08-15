@@ -1,0 +1,13 @@
+import type * as ElevenLabs from "../../api/index";
+import * as core from "../../core";
+import type * as serializers from "../index";
+import { MetricRecord } from "./MetricRecord";
+export declare const ConversationTurnMetrics: core.serialization.ObjectSchema<serializers.ConversationTurnMetrics.Raw, ElevenLabs.ConversationTurnMetrics>;
+export declare namespace ConversationTurnMetrics {
+    interface Raw {
+        metrics?: Record<string, MetricRecord.Raw> | null;
+        convai_asr_provider?: string | null;
+        convai_tts_model?: string | null;
+        convai_tts_cascade?: string | null;
+    }
+}

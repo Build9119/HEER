@@ -1,0 +1,12 @@
+export interface LlmDeprecationConfigModel {
+    /** Number of days before the provider deprecation date when warnings start being shown. */
+    warningStartDays: number;
+    /** Number of days before the provider deprecation date when traffic starts being routed to the replacement model. */
+    fallbackStartDays: number;
+    /** Number of days before the provider deprecation date when all traffic is routed to the replacement model. */
+    fallbackCompleteDays: number;
+    /** Percentage of traffic routed to the replacement model when fallback begins. */
+    fallbackStartPercentage: number;
+    /** Percentage of traffic routed to the replacement model when fallback is complete. */
+    fallbackCompletePercentage: number;
+}

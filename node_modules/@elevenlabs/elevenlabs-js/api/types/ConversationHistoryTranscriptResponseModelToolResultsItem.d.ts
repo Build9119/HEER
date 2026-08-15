@@ -1,0 +1,2 @@
+import type * as ElevenLabs from "../index";
+export type ConversationHistoryTranscriptResponseModelToolResultsItem = ElevenLabs.ConversationHistoryTranscriptOtherToolsResultCommonModel | ElevenLabs.ConversationHistoryTranscriptSystemToolResultCommonModelOutput | ElevenLabs.ConversationHistoryTranscriptApiIntegrationWebhookToolsResultCommonModelOutput | ElevenLabs.ConversationHistoryTranscriptWorkflowToolsResultCommonModelOutput;

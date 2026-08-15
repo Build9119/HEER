@@ -1,0 +1,14 @@
+/**
+ * @example
+ *     {
+ *         targetBranchId: "agtbrch_8901k4t9z5defmb8vh3e9361y7nj"
+ *     }
+ */
+export interface BodyMergeABranchIntoATargetBranchV1ConvaiAgentsAgentIdBranchesSourceBranchIdMergePost {
+    /** The ID of the target branch to merge into. */
+    targetBranchId: string;
+    /** Whether to archive the source branch after merging */
+    archiveSourceBranch?: boolean;
+    /** Force source branch changes onto the target, overriding timestamp-based conflict resolution */
+    force?: boolean;
+}

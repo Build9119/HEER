@@ -1,0 +1,9 @@
+/**
+ * Payload for chunk size exceeded errors.
+ */
+export interface ScribeChunkSizeExceededErrorPayload {
+    /** The message type identifier. */
+    messageType: "chunk_size_exceeded";
+    /** Chunk size exceeded error details. */
+    error: string;
+}

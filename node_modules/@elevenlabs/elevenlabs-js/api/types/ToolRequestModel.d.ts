@@ -1,0 +1,7 @@
+import type * as ElevenLabs from "../index";
+export interface ToolRequestModel {
+    /** Configuration for the tool */
+    toolConfig: ElevenLabs.ToolRequestModelToolConfig;
+    /** Mock responses with optional parameter conditions. Evaluated top-to-bottom; first match wins. */
+    responseMocks?: ElevenLabs.ToolResponseMockConfigInput[];
+}

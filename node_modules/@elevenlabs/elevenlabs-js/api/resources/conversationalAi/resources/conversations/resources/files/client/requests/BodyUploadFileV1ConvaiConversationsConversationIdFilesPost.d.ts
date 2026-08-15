@@ -1,0 +1,11 @@
+import type * as core from "../../../../../../../../../core";
+/**
+ * @example
+ *     {
+ *         file: fs.createReadStream("/path/to/your/file")
+ *     }
+ */
+export interface BodyUploadFileV1ConvaiConversationsConversationIdFilesPost {
+    /** Image or PDF file to upload */
+    file: core.file.Uploadable;
+}

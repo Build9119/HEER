@@ -1,0 +1,17 @@
+import type * as ElevenLabs from "../../api/index";
+import * as core from "../../core";
+import type * as serializers from "../index";
+export declare const CreateOAuth2ClientCredsRequest: core.serialization.ObjectSchema<serializers.CreateOAuth2ClientCredsRequest.Raw, ElevenLabs.CreateOAuth2ClientCredsRequest>;
+export declare namespace CreateOAuth2ClientCredsRequest {
+    interface Raw {
+        name: string;
+        provider: string;
+        client_id: string;
+        token_url: string;
+        scopes?: string[] | null;
+        extra_params?: Record<string, string> | null;
+        basic_auth_in_header?: boolean | null;
+        client_secret: string;
+        custom_headers?: Record<string, string> | null;
+    }
+}

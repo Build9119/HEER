@@ -1,0 +1,7 @@
+export interface UnitTestWorkflowNodeTransitionEvaluationNodeId {
+    type?: "node_id";
+    /** The ID of the agent whose workflow contains the target node. */
+    agentId: string;
+    /** The ID of the workflow node that the agent should transition to. */
+    targetNodeId: string;
+}

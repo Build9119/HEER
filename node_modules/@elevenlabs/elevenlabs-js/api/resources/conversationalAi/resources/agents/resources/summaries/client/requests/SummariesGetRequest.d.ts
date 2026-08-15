@@ -1,0 +1,10 @@
+/**
+ * @example
+ *     {
+ *         agentIds: ["agent_ids"]
+ *     }
+ */
+export interface SummariesGetRequest {
+    /** List of agent IDs to fetch summaries for */
+    agentIds?: string | string[];
+}

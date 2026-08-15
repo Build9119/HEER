@@ -1,0 +1,17 @@
+import type * as ElevenLabs from "../index";
+/**
+ * Definition for a tool the client can call.
+ */
+export interface Tool {
+    name: string;
+    title?: string;
+    description?: string;
+    inputSchema: Record<string, unknown>;
+    outputSchema?: Record<string, unknown>;
+    icons?: ElevenLabs.Icon[];
+    annotations?: ElevenLabs.ToolAnnotations;
+    meta?: Record<string, unknown>;
+    execution?: ElevenLabs.ToolExecution;
+    /** Accepts any additional properties */
+    [key: string]: any;
+}

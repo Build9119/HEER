@@ -1,0 +1,10 @@
+export interface AutoSyncInfo {
+    /** Maximum number of days between automatic syncs */
+    minimumFrequencyDays?: number;
+    /** Whether to remove the document if the URL becomes unavailable */
+    autoRemove?: boolean;
+    /** Number of consecutive sync failures */
+    consecFailures?: number;
+    /** Unix timestamp for the next scheduled sync or None (in case of folders) */
+    nextRefreshBy?: number;
+}

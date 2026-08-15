@@ -1,0 +1,14 @@
+/**
+ * @example
+ *     {
+ *         limit: 1,
+ *         lastDoc: "last_doc",
+ *         agentId: "agent_id"
+ *     }
+ */
+export interface BatchCallsListRequest {
+    limit?: number;
+    lastDoc?: string;
+    /** Filter batch calls to a single agent. */
+    agentId?: string;
+}

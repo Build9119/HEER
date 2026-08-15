@@ -1,0 +1,10 @@
+import type * as ElevenLabs from "../index";
+export interface ToolResponseModel {
+    id: string;
+    /** The type of tool */
+    toolConfig: ElevenLabs.ToolResponseModelToolConfig;
+    accessInfo: ElevenLabs.ResourceAccessInfo;
+    usageStats: ElevenLabs.ToolUsageStatsResponseModel;
+    /** Mock responses with optional parameter conditions. Evaluated top-to-bottom; first match wins. */
+    responseMocks?: ElevenLabs.ToolResponseMockConfigOutput[];
+}

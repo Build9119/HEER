@@ -1,0 +1,6 @@
+/**
+ * OCSF Activity IDs for Authentication [3002] events.
+ *
+ * Spec: https://schema.ocsf.io/1.6.0/classes/authentication
+ */
+export type AuthenticationActivityId = number;

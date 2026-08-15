@@ -1,0 +1,7 @@
+import type * as ElevenLabs from "../index";
+export interface SpeechEngineConfig {
+    /** The WebSocket URL for the transcript server */
+    wsUrl: string;
+    /** Headers to include in the WebSocket connection request */
+    requestHeaders?: Record<string, ElevenLabs.SpeechEngineConfigRequestHeadersValue>;
+}

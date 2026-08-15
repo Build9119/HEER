@@ -1,0 +1,17 @@
+import type * as ElevenLabs from "../index";
+export interface ConversationHistoryTranscriptApiIntegrationWebhookToolsResultCommonModelInput {
+    requestId: string;
+    toolName: string;
+    resultValue: string;
+    isError: boolean;
+    isBlocked?: boolean;
+    toolHasBeenCalled: boolean;
+    toolLatencySecs?: number;
+    errorType?: string;
+    rawErrorMessage?: string;
+    dynamicVariableUpdates?: ElevenLabs.DynamicVariableUpdateCommonModel[];
+    type: "api_integration_webhook";
+    integrationId?: string;
+    credentialId?: string;
+    integrationConnectionId?: string;
+}

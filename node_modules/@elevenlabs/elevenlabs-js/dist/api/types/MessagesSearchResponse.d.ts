@@ -1,0 +1,9 @@
+import type * as ElevenLabs from "../index";
+export interface MessagesSearchResponse {
+    meta?: ElevenLabs.ListResponseMeta;
+    results: ElevenLabs.MessagesSearchResult[];
+    /** Cursor for the next page of results */
+    nextCursor?: string;
+    /** Whether there are more results available */
+    hasMore: boolean;
+}

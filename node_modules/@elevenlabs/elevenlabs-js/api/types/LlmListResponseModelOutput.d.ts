@@ -1,0 +1,7 @@
+import type * as ElevenLabs from "../index";
+export interface LlmListResponseModelOutput {
+    /** List of all available LLM models that can be used with agents. */
+    llms: ElevenLabs.LlmInfoModelOutput[];
+    /** The default deprecation timing configuration used for models without a custom override. */
+    defaultDeprecationConfig: ElevenLabs.LlmDeprecationConfigModel;
+}

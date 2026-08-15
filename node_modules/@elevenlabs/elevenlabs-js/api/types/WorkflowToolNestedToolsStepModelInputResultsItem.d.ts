@@ -1,0 +1,2 @@
+import type * as ElevenLabs from "../index";
+export type WorkflowToolNestedToolsStepModelInputResultsItem = ElevenLabs.ConversationHistoryTranscriptOtherToolsResultCommonModel | ElevenLabs.ConversationHistoryTranscriptSystemToolResultCommonModelInput | ElevenLabs.ConversationHistoryTranscriptApiIntegrationWebhookToolsResultCommonModelInput | ElevenLabs.ConversationHistoryTranscriptWorkflowToolsResultCommonModelInput;

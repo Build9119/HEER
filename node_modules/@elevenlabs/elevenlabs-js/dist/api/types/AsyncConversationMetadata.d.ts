@@ -1,0 +1,15 @@
+import type * as ElevenLabs from "../index";
+/**
+ * Metadata for async conversation delivery (Zendesk, Slack, etc.).
+ */
+export interface AsyncConversationMetadata {
+    deliveryStatus: ElevenLabs.AsyncConversationMetadataDeliveryStatus;
+    deliveryTimestamp: number;
+    deliveryError?: string;
+    externalSystem: string;
+    externalId: string;
+    externalLink?: string;
+    retryCount?: number;
+    lastRetryTimestamp?: number;
+    lastProcessedExternalMessageId?: string;
+}

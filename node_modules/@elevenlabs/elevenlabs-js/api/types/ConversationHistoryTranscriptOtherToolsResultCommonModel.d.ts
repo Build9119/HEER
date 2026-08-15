@@ -1,0 +1,14 @@
+import type * as ElevenLabs from "../index";
+export interface ConversationHistoryTranscriptOtherToolsResultCommonModel {
+    requestId: string;
+    toolName: string;
+    resultValue: string;
+    isError: boolean;
+    isBlocked?: boolean;
+    toolHasBeenCalled: boolean;
+    toolLatencySecs?: number;
+    errorType?: string;
+    rawErrorMessage?: string;
+    dynamicVariableUpdates?: ElevenLabs.DynamicVariableUpdateCommonModel[];
+    type?: ElevenLabs.ConversationHistoryTranscriptOtherToolsResultCommonModelType;
+}

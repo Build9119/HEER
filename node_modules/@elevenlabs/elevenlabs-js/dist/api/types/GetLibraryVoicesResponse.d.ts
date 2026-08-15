@@ -1,0 +1,10 @@
+import type * as ElevenLabs from "../index";
+export interface GetLibraryVoicesResponse {
+    /** The list of shared voices */
+    voices: ElevenLabs.LibraryVoiceResponse[];
+    /** Whether there are more shared voices in subsequent pages. */
+    hasMore: boolean;
+    /** The total number of shared voices matching the query. */
+    totalCount?: number;
+    lastSortId?: string;
+}

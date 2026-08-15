@@ -1,0 +1,15 @@
+import type * as ElevenLabs from "../index";
+export interface ChapterStatisticsResponse {
+    /** The number of unconverted characters. */
+    charactersUnconverted: number;
+    /** The number of converted characters. */
+    charactersConverted: number;
+    /** The number of converted paragraphs. */
+    paragraphsConverted: number;
+    /** The number of unconverted paragraphs. */
+    paragraphsUnconverted: number;
+    /** The number of credits needed to convert the remaining paragraphs. */
+    creditsNeededToConvert?: number;
+    /** Per-voice breakdown of character counts. */
+    voiceStatistics?: ElevenLabs.VoiceStatisticsResponseModel[];
+}

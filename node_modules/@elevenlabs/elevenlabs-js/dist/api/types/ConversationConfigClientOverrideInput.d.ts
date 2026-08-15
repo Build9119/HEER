@@ -1,0 +1,13 @@
+import type * as ElevenLabs from "../index";
+export interface ConversationConfigClientOverrideInput {
+    /** Configuration for conversational transcription */
+    asr?: ElevenLabs.AsrConversationalConfigOverride;
+    /** Configuration for turn detection */
+    turn?: ElevenLabs.TurnConfigOverride;
+    /** Configuration for conversational text to speech */
+    tts?: ElevenLabs.TtsConversationalConfigOverride;
+    /** Configuration for conversational events */
+    conversation?: ElevenLabs.ConversationConfigOverride;
+    /** Agent specific configuration */
+    agent?: ElevenLabs.AgentConfigOverrideInput;
+}

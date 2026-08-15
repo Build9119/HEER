@@ -1,0 +1,10 @@
+export interface TextToDialogueWebsocketError {
+    /** Human-readable error description. */
+    message: string;
+    /** Machine-readable error identifier (for example `authentication_required`). */
+    error: string;
+    /** WebSocket close code that will follow this payload. */
+    code: number;
+    /** Field name related to the error, when applicable. */
+    param?: string;
+}

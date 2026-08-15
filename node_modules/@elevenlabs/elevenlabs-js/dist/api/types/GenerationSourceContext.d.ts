@@ -1,0 +1,12 @@
+import type * as ElevenLabs from "../index";
+export interface GenerationSourceContext {
+    sourceType?: "generation";
+    generationId: string;
+    prompt?: string;
+    modelId: string;
+    modelProvider?: string;
+    generationSessionId?: string;
+    sessionIterationId?: string;
+    modelParameters?: Record<string, unknown>;
+    extendVideo?: ElevenLabs.ReferenceVideo;
+}

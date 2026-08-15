@@ -1,0 +1,10 @@
+/**
+ * @example
+ *     {
+ *         tagIds: ["tag_ids"]
+ *     }
+ */
+export interface AssignConversationTagsRequestModel {
+    /** Tag IDs to add to the conversation. Re-assigning an existing tag is a no-op. */
+    tagIds: string[];
+}

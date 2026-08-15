@@ -1,0 +1,8 @@
+export interface TextToDialogueWebsocketVoiceInput {
+    /** Text appended for this voice. Buffered with prior text until the server triggers generation. */
+    text: string;
+    /** Must be one of the IDs from the initial `voices` array. */
+    voiceId: string;
+    /** When `true`, the server finalizes the current pending segment (as if the speaker finished their turn) before applying this input. */
+    newTurn?: boolean;
+}

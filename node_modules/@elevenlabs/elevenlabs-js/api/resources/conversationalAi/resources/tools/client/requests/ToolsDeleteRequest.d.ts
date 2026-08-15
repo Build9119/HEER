@@ -1,0 +1,10 @@
+/**
+ * @example
+ *     {
+ *         force: true
+ *     }
+ */
+export interface ToolsDeleteRequest {
+    /** If set to true, the tool will be deleted regardless of whether it is used by any agents and it will be removed from the dependent agents and branches. */
+    force?: boolean;
+}

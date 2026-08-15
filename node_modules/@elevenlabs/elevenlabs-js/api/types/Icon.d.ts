@@ -1,0 +1,10 @@
+/**
+ * An icon for display in user interfaces.
+ */
+export interface Icon {
+    src: string;
+    mimeType?: string;
+    sizes?: string[];
+    /** Accepts any additional properties */
+    [key: string]: any;
+}

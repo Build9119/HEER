@@ -1,0 +1,12 @@
+/**
+ * Allows the agent to play DTMF tones during a phone call.
+ *
+ * This tool can be used to interact with automated phone systems, such as
+ * navigating phone menus, entering extensions, or inputting numeric codes.
+ */
+export interface PlayDtmfToolConfig {
+    /** Send DTMF tones as out-of-band RTP events (RFC 4733) instead of in-band audio. Only effective for SIP trunk imported numbers. */
+    useOutOfBandDtmf?: boolean;
+    /** If true, the agent will not generate further speech after playing DTMF tones. This prevents the agent's speech from interfering with IVR systems. */
+    suppressTurnAfterDtmf?: boolean;
+}

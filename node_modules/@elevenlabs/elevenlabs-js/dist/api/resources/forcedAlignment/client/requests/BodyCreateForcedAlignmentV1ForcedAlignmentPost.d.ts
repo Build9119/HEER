@@ -1,0 +1,14 @@
+import type * as core from "../../../../../core";
+/**
+ * @example
+ *     {
+ *         file: fs.createReadStream("/path/to/your/file"),
+ *         text: "text"
+ *     }
+ */
+export interface BodyCreateForcedAlignmentV1ForcedAlignmentPost {
+    /** The file to align. All major audio formats are supported. The file size must be less than 1GB. */
+    file: core.file.Uploadable;
+    /** The text to align with the audio. The input text can be in any format, however diarization is not supported at this time. */
+    text: string;
+}

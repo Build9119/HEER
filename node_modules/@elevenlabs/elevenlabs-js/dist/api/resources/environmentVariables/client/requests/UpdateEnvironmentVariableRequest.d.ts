@@ -1,0 +1,11 @@
+import type * as ElevenLabs from "../../../../index";
+/**
+ * @example
+ *     {
+ *         values: {}
+ *     }
+ */
+export interface UpdateEnvironmentVariableRequest {
+    /** Values to replace. Set to null to remove an environment (except 'production'). */
+    values: Record<string, ElevenLabs.UpdateEnvironmentVariableRequestValuesValue | undefined>;
+}

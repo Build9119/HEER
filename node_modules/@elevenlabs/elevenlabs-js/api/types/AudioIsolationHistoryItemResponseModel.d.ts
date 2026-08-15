@@ -1,0 +1,14 @@
+export interface AudioIsolationHistoryItemResponseModel {
+    id: string;
+    title?: string;
+    createdAtUnix: number;
+    format: string;
+    durationSeconds?: number;
+    downloadUrl?: string;
+    iconUrl?: string;
+    sourceVideoUrl?: string;
+    supportsVideo: boolean;
+    processing: boolean;
+    videoProcessingFailed: boolean;
+    previewB64?: string;
+}

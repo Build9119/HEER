@@ -1,0 +1,13 @@
+import type * as ElevenLabs from "../index";
+export interface OrderMediaResponse {
+    /** The ID of the media file. */
+    mediaId: ElevenLabs.MediaId;
+    /** The original filename of the uploaded media. */
+    name: string;
+    /** The MIME type of the media file (e.g. 'video/mp4'). */
+    contentType: string;
+    /** The detected or declared language of the media, if available. */
+    language?: string;
+    /** A time-limited URL to download the media file. */
+    signedUrl: string;
+}

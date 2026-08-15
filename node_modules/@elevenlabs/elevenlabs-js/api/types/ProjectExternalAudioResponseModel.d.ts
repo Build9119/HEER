@@ -1,0 +1,31 @@
+import type * as ElevenLabs from "../index";
+export interface ProjectExternalAudioResponseModel {
+    externalAudioId: string;
+    filename: string;
+    signedUrl?: string;
+    offsetMs: number;
+    durationMs: number;
+    startTimeMs: number;
+    endTimeMs?: number;
+    order: string;
+    trackId: string;
+    createdAtMs: number;
+    updatedAtMs: number;
+    volumeGainDb?: number;
+    muted?: boolean;
+    fadeInMs?: number;
+    fadeOutMs?: number;
+    sourceExternalAudioId?: string;
+    sourceAssetId?: string;
+    sourcePlatformAssetId?: string;
+    pendingBlocksMetadata?: ElevenLabs.PendingBlocksMetadataModel;
+    pendingExternalAudiosMetadata?: ElevenLabs.PendingExternalAudiosMetadataModel;
+    speechImported?: boolean;
+    pendingTask?: ElevenLabs.PendingClipTask;
+    error?: string;
+    currentSnapshotId?: string;
+    sourceContext?: ElevenLabs.ProjectExternalAudioResponseModelSourceContext;
+    analysis?: ElevenLabs.AudioAnalysis;
+    transcription?: ElevenLabs.AssetTranscription;
+    importSpeechProgress?: number;
+}

@@ -1,0 +1,14 @@
+import type * as ElevenLabs from "../index";
+export interface UpdateOAuth2JwtRequest {
+    provider?: string;
+    algorithm?: ElevenLabs.UpdateOAuth2JwtRequestAlgorithm;
+    keyId?: string;
+    issuer?: string;
+    audience?: string;
+    subject?: string;
+    expirationSeconds?: number;
+    extraParams?: Record<string, string | undefined>;
+    scopes?: string[];
+    tokenResponseField?: ElevenLabs.UpdateOAuth2JwtRequestTokenResponseField;
+    secretKey?: string;
+}

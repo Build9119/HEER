@@ -1,0 +1,9 @@
+/**
+ * Payload for insufficient audio activity errors.
+ */
+export interface ScribeInsufficientAudioActivityErrorPayload {
+    /** The message type identifier. */
+    messageType: "insufficient_audio_activity";
+    /** Insufficient audio activity error details. */
+    error: string;
+}

@@ -1,0 +1,10 @@
+import type * as ElevenLabs from "../index";
+export interface ReviewResponseModel {
+    reviewStatus: ElevenLabs.ReviewResponseModelReviewStatus;
+    reviewedAtUnix: number;
+    reviewedBy?: string;
+    rejectReasons?: ElevenLabs.ReviewResponseModelRejectReasonsItem[];
+    scoresBreakdown?: Record<string, number | undefined>;
+    rejectedDetails?: string;
+    explanation?: string;
+}

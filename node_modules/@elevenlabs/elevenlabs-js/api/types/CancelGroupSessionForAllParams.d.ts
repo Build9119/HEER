@@ -1,0 +1,8 @@
+/**
+ * Cancel an entire group session and notify every registered participant.
+ * Destructive -- prefer ``cancel_group_session_registration`` for cancelling
+ * a single attendee.
+ */
+export interface CancelGroupSessionForAllParams {
+    smbToolType?: "cancel_group_session_for_all";
+}

@@ -1,0 +1,12 @@
+/**
+ * @example
+ *     {
+ *         pageSize: 1,
+ *         cursor: "cursor"
+ *     }
+ */
+export interface PhoneNumbersGetSipMessagesRequest {
+    pageSize?: number;
+    /** Used for fetching next page. Cursor is returned in the response. */
+    cursor?: string;
+}

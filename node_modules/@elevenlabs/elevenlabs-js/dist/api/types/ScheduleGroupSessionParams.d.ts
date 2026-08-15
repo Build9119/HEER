@@ -1,0 +1,11 @@
+/**
+ * Schedule a single instance of a group service.
+ *
+ * The session's duration is derived from the parent service so the assistant
+ * only has to pin start time, the (optional) instructor / room, and the
+ * location. Participants register separately via
+ * ``register_for_group_session``.
+ */
+export interface ScheduleGroupSessionParams {
+    smbToolType?: "schedule_group_session";
+}

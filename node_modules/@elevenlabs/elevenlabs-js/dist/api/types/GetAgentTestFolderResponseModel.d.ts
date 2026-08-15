@@ -1,0 +1,9 @@
+import type * as ElevenLabs from "../index";
+export interface GetAgentTestFolderResponseModel {
+    id: string;
+    name: string;
+    /** The path from the root folder to the current folder. */
+    folderPath?: ElevenLabs.AgentTestFolderPathSegmentResponseModel[];
+    /** The number of direct children (tests and subfolders) in this folder */
+    childrenCount?: number;
+}

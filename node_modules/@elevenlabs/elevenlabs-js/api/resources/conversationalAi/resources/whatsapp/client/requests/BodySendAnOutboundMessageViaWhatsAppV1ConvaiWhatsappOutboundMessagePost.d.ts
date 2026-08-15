@@ -1,0 +1,26 @@
+import type * as ElevenLabs from "../../../../../../index";
+/**
+ * @example
+ *     {
+ *         whatsappPhoneNumberId: "whatsapp_phone_number_id",
+ *         whatsappUserId: "whatsapp_user_id",
+ *         templateName: "template_name",
+ *         templateLanguageCode: "template_language_code",
+ *         templateParams: [{
+ *                 type: "body",
+ *                 parameters: [{
+ *                         text: "text"
+ *                     }]
+ *             }],
+ *         agentId: "agent_id"
+ *     }
+ */
+export interface BodySendAnOutboundMessageViaWhatsAppV1ConvaiWhatsappOutboundMessagePost {
+    whatsappPhoneNumberId: string;
+    whatsappUserId: string;
+    templateName: string;
+    templateLanguageCode: string;
+    templateParams: ElevenLabs.conversationalAi.BodySendAnOutboundMessageViaWhatsAppV1ConvaiWhatsappOutboundMessagePostTemplateParamsItem[];
+    agentId: string;
+    conversationInitiationClientData?: ElevenLabs.ConversationInitiationClientDataRequestInput;
+}

@@ -1,0 +1,8 @@
+import type * as ElevenLabs from "../index";
+export interface RagRetrievalInfo {
+    chunks: ElevenLabs.RagChunkMetadata[];
+    embeddingModel: ElevenLabs.EmbeddingModelEnum;
+    retrievalQuery: string;
+    ragLatencySecs: number;
+    usedChunkIds?: string[];
+}

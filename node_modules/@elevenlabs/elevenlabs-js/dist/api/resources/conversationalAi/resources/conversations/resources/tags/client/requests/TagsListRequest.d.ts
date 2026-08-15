@@ -1,0 +1,13 @@
+/**
+ * @example
+ *     {
+ *         pageSize: 1,
+ *         cursor: "cursor"
+ *     }
+ */
+export interface TagsListRequest {
+    /** How many conversation tags to return. Can not exceed 100. */
+    pageSize?: number;
+    /** Used for fetching next page. Cursor is returned in the response. */
+    cursor?: string;
+}

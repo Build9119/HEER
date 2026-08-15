@@ -1,0 +1,16 @@
+import type * as ElevenLabs from "../../../../../../../../index";
+/**
+ * @example
+ *     {}
+ */
+export interface BodyListApiRequestsV1WorkspaceAnalyticsRequestsPost {
+    /** Start of the time range as a Unix timestamp in milliseconds. */
+    startTime?: number;
+    /** End of the time range as a Unix timestamp in milliseconds. */
+    endTime?: number;
+    limit?: number;
+    /** Optional timestamp sort direction. If omitted, defaults to desc when end_time is provided, otherwise asc. */
+    sort?: ElevenLabs.workspace.analytics.BodyListApiRequestsV1WorkspaceAnalyticsRequestsPostSort;
+    filters?: ElevenLabs.ColumnFilter[];
+    search?: string;
+}

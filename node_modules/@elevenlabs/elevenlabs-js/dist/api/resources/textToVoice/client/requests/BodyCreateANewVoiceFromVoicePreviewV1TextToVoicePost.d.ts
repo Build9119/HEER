@@ -1,0 +1,20 @@
+/**
+ * @example
+ *     {
+ *         voiceName: "Sassy squeaky mouse",
+ *         voiceDescription: "A sassy squeaky mouse",
+ *         generatedVoiceId: "37HceQefKmEi3bGovXjL"
+ *     }
+ */
+export interface BodyCreateANewVoiceFromVoicePreviewV1TextToVoicePost {
+    /** Name to use for the created voice. */
+    voiceName: string;
+    /** Description to use for the created voice. */
+    voiceDescription: string;
+    /** The generated_voice_id to create; obtain it from POST /v1/text-to-voice/design, POST /v1/text-to-voice/:voice_id/remix, or the response headers when generating previews. */
+    generatedVoiceId: string;
+    /** Optional, metadata to add to the created voice. Defaults to None. */
+    labels?: Record<string, string | undefined>;
+    /** List of voice ids that the user has played but not selected. Used for RLHF. */
+    playedNotSelectedVoiceIds?: string[];
+}

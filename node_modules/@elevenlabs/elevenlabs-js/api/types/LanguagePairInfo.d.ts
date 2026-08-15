@@ -1,0 +1,7 @@
+import type * as ElevenLabs from "../index";
+export interface LanguagePairInfo {
+    /** The source language. */
+    sourceLanguage: ElevenLabs.LanguageInfo;
+    /** The available destination languages for this source language. */
+    destinationLanguages: ElevenLabs.LanguageInfo[];
+}

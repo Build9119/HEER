@@ -1,0 +1,15 @@
+import type * as ElevenLabs from "../index";
+export interface GetPhoneNumberTwilioResponseModel {
+    /** Phone number */
+    phoneNumber: string;
+    /** Label for the phone number */
+    label: string;
+    /** This field is deprecated and will be removed in the future. Whether this phone number supports inbound calls */
+    supportsInbound?: boolean;
+    /** This field is deprecated and will be removed in the future. Whether this phone number supports outbound calls */
+    supportsOutbound?: boolean;
+    /** The ID of the phone number */
+    phoneNumberId: string;
+    /** The agent that is assigned to the phone number */
+    assignedAgent?: ElevenLabs.PhoneNumberAgentInfo;
+}

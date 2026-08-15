@@ -1,0 +1,20 @@
+export declare const GenesysRegion: {
+    readonly UsEast1: "us_east_1";
+    readonly EuWest1: "eu_west_1";
+    readonly ApSoutheast2: "ap_southeast_2";
+    readonly ApNortheast1: "ap_northeast_1";
+    readonly EuCentral1: "eu_central_1";
+    readonly UsWest2: "us_west_2";
+    readonly CaCentral1: "ca_central_1";
+    readonly ApNortheast2: "ap_northeast_2";
+    readonly EuWest2: "eu_west_2";
+    readonly ApSouth1: "ap_south_1";
+    readonly UsEast2: "us_east_2";
+    readonly SaEast1: "sa_east_1";
+    readonly MeCentral1: "me_central_1";
+    readonly ApNortheast3: "ap_northeast_3";
+    readonly EuCentral2: "eu_central_2";
+    readonly MxCentral1: "mx_central_1";
+    readonly ApSoutheast1: "ap_southeast_1";
+};
+export type GenesysRegion = (typeof GenesysRegion)[keyof typeof GenesysRegion];

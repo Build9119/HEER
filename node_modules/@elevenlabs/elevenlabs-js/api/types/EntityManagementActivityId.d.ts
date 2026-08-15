@@ -1,0 +1,6 @@
+/**
+ * OCSF Activity IDs for Entity Management [3004] events.
+ *
+ * Spec: https://schema.ocsf.io/1.6.0/classes/entity_management
+ */
+export type EntityManagementActivityId = number;

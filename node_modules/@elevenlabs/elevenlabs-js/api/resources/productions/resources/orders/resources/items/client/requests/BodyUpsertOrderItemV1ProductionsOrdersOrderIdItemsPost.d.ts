@@ -1,0 +1,21 @@
+import type * as ElevenLabs from "../../../../../../../../index";
+/**
+ * @example
+ *     {
+ *         request: {
+ *             item: {
+ *                 kind: "dub",
+ *                 mediaId: "prodmedia_01jgatk6h0fwxrtbjade61yqhx",
+ *                 sourceLanguage: "en",
+ *                 destinationLanguages: ["hi", "fr-FR", "de"],
+ *                 includeCaptions: true,
+ *                 includeSourceCaptions: false,
+ *                 instructions: "Voices don't need to match the originals, prioritize native-sounding voices",
+ *                 captionsSdh: false
+ *             }
+ *         }
+ *     }
+ */
+export interface BodyUpsertOrderItemV1ProductionsOrdersOrderIdItemsPost {
+    request: ElevenLabs.UpsertOrderItemRequest;
+}

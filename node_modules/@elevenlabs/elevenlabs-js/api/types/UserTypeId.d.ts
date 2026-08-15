@@ -1,0 +1,6 @@
+/**
+ * OCSF User type IDs.
+ *
+ * Spec: https://schema.ocsf.io/1.6.0/objects/user
+ */
+export type UserTypeId = number;

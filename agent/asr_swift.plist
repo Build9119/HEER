@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>asr_swift</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.heer.asr-swift</string>
+	<key>CFBundleName</key>
+	<string>asr_swift</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>HEER uses speech recognition to transcribe your voice commands into text.</string>
+</dict>
+</plist>

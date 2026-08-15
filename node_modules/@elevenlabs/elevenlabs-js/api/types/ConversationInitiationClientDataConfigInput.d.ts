@@ -1,0 +1,11 @@
+import type * as ElevenLabs from "../index";
+export interface ConversationInitiationClientDataConfigInput {
+    /** Overrides for the conversation configuration */
+    conversationConfigOverride?: ElevenLabs.ConversationConfigClientOverrideConfigInput;
+    /** Whether to include custom LLM extra body */
+    customLlmExtraBody?: boolean;
+    /** Whether to enable conversation initiation client data from webhooks */
+    enableConversationInitiationClientDataFromWebhook?: boolean;
+    /** Whether clients may pass starting_workflow_node_id in initiation client data; if false, sending it fails conversation start. */
+    enableStartingWorkflowNodeIdFromClient?: boolean;
+}

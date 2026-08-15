@@ -1,0 +1,11 @@
+export declare const RagIndexStatus: {
+    readonly New: "new";
+    readonly Created: "created";
+    readonly Processing: "processing";
+    readonly Failed: "failed";
+    readonly Succeeded: "succeeded";
+    readonly RagLimitExceeded: "rag_limit_exceeded";
+    readonly DocumentTooSmall: "document_too_small";
+    readonly CannotIndexFolder: "cannot_index_folder";
+};
+export type RagIndexStatus = (typeof RagIndexStatus)[keyof typeof RagIndexStatus];
